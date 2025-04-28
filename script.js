@@ -49,6 +49,21 @@ for (let i = 0; i <= 9; i++) {
     }
 }
 
+//add decimal
+document.getElementById(".").onclick = function () {
+    if (number === "numberOne") {
+        if (!numberOne.includes('.')) {
+            document.getElementById("screen").innerHTML = `${parseFloat(numberOne)}.`;
+            numberOne = `${numberOne}.`;
+        }
+    } else if (number === "numberTwo") {
+        if (!numberTwo.includes('.')) {
+            document.getElementById("screen").innerHTML = (parseFloat(numberTwo)) + ".";
+            numberTwo = `${numberTwo}.`;
+        }
+    }
+}
+
 //clear function
 document.getElementById("clear").onclick = function () {
     clear();
